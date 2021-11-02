@@ -8,6 +8,7 @@ Documentación Postman
 https://documenter.getpostman.com/view/18149590/UVByKAuM
 
 
+
 API para la gestión de los diversos seguros de la empresa Falabella Seguros. Se requiere nombre del seguro ("name"), valor de sellIn ("sellIn") que indica la cantidad de días que se tienen para vender ese producto y el precio ("price") que indica el costo del producto
 
 
@@ -119,11 +120,12 @@ Otro seguro , -1 , 71 No existen reglas especiales para este seguro
 Repositorio docker Test
 https://hub.docker.com/r/joaquinantuna/node-apifalabella-test
 
+
+
 Acá se comparte una serie de test para las funciones lógicas del endpoint GET localhost:3050/evaluateProducts/5
 
 Reglas de producto entregadas:
-
-Reglas globales
+    Reglas globales
 
     1 Todos los productos tienen un valor de sellIn, que indica la cantidad de días que tenemos para vender ese producto.
     2 Todos los productos tienen un valor price que indica el costo del producto.
@@ -132,7 +134,7 @@ Reglas globales
     5 El precio de un producto, nunca es negativo.
     6 El precio de un producto nunca supera los 100.
 
-Reglas específicas
+    Reglas específicas
 
     7 El producto "Mega cobertura" tiene un precio fijo de 180.
     8 El producto "Mega cobertura", nunca vence para vender y nunca disminuye su precio.
