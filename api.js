@@ -57,7 +57,7 @@ app.post('/agregar', (req, res) => {
     if (error) throw error;
     console.log('Seguro creado!');
     console.log('nombre , sellIn , price');
-    console.log(data.name, data.sellIn, data.price);
+    console.log(data.name, ", ", data.sellIn, ", ", data.price);
     res.send(`Seguro creado! ${data.name}, ${data.sellIn}, ${data.price} `);
   });
 });
