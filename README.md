@@ -7,8 +7,6 @@ https://hub.docker.com/r/joaquinantuna/node-apifalabella
 Documentación Postman
 https://documenter.getpostman.com/view/18149590/UVByKAuM
 
-Repositorio docker Test
-https://hub.docker.com/r/joaquinantuna/node-apifalabella-test
 
 API para la gestión de los diversos seguros de la empresa Falabella Seguros. Se requiere nombre del seguro ("name"), valor de sellIn ("sellIn") que indica la cantidad de días que se tienen para vender ese producto y el precio ("price") que indica el costo del producto
 
@@ -117,6 +115,9 @@ Otro seguro , -1 , 71 No existen reglas especiales para este seguro
 
 
 # ApiFalabella-Test
+
+Repositorio docker Test
+https://hub.docker.com/r/joaquinantuna/node-apifalabella-test
 
 Acá se comparte una serie de test para las funciones lógicas del endpoint GET localhost:3050/evaluateProducts/5
 
