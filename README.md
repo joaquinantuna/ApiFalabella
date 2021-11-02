@@ -114,3 +114,29 @@ Full cobertura super duper , 3 , 55
 Otro seguro , 0 , 100 No existen reglas especiales para este seguro
 
 Otro seguro , -1 , 71 No existen reglas especiales para este seguro
+
+
+# ApiFalabella-Test
+
+Acá se comparte una serie de test para las funciones lógicas del endpoint GET localhost:3050/evaluateProducts/5
+
+Reglas de producto entregadas:
+
+Reglas globales
+
+    1 Todos los productos tienen un valor de sellIn, que indica la cantidad de días que tenemos para vender ese producto.
+    2 Todos los productos tienen un valor price que indica el costo del producto.
+    3 Al final del día, el sistema debe disminuir los valores de price y sellIn para cada producto.
+    4 Una vez que la fecha de venta ha pasado, sellIn < 0 , los precios de cada producto, se degradan el doble de rápido.
+    5 El precio de un producto, nunca es negativo.
+    6 El precio de un producto nunca supera los 100.
+
+Reglas específicas
+
+    7 El producto "Mega cobertura" tiene un precio fijo de 180.
+    8 El producto "Mega cobertura", nunca vence para vender y nunca disminuye su precio.
+    9 El producto "Super avance" disminuye su precio el doble de rápido que un producto normal.
+    10 El producto "Full cobertura" incrementa su precio a medida que pasa el tiempo.
+    11 El producto "Full cobertura Super duper", tal como el "Full Cobertura", incrementa su precio a medida que se acerca su fecha de vencimiento:
+        El precio se incrementa en 2 cuando quedan 10 dias o menos y se incrementa en 3, cuando quedan 5 dias o menos.
+        el precio disminuye a 0 cuando se vence el tiempo de venta. 
